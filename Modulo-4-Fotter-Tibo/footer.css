@@ -1,0 +1,31 @@
+footer {
+    background-color: #2B1704;
+    color: #FDFBF7;
+    text-align: center;
+    padding: 45px 20px 25px 20px;
+}
+footer h3{
+    color: #A26744;
+    margin-bottom: 150px;
+}
+footer p{
+    margin: 8px 0;
+    line-height: 1.6; 
+}
+footer .suave {
+    font-size: 0.9rem;
+    color: #D7C4B7;
+}
+footer a {
+    color: #A26744
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #FFFFFF;
+}
+footer .creditos {
+    margin-top: 25px;
+    border-top: 1px solid #4A3324;
+    padding-top: 15px;
+}
