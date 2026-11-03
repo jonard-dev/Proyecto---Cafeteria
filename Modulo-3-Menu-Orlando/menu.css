@@ -23,16 +23,38 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-#menu th {
+/* --- TÍTULOS DE LA CABECERA --- */
+
+/* 1. Título 'Producto': con un pequeño espacio a la izquierda (el centímetro que pediste) */
+#menu th:nth-child(1) {
     background-color: #A26744;
     color: #FFFFFF;
     padding: 14px 16px;
     text-align: left;
+    padding-left: 25px; 
+    width: 32%;
 }
 
-#menu th:last-child {
+/* 2. Título 'Descripción': exactamente centrado a mitad de su columna */
+#menu th:nth-child(2) {
+    background-color: #A26744;
+    color: #FFFFFF;
+    padding: 14px 16px;
     text-align: center;
+    width: 48%;
 }
+
+/* 3. Título 'Precio': centrado */
+#menu th:nth-child(3) {
+    background-color: #A26744;
+    color: #FFFFFF;
+    padding: 14px 16px;
+    text-align: center;
+    width: 20%;
+}
+
+
+/* --- TEXTOS DE LA TABLA (SE QUEDAN EN SU SITIO ORIGINAL) --- */
 
 #menu td {
     padding: 12px 16px;
@@ -40,7 +62,20 @@
     color: #2B1704;
 }
 
-#menu td:last-child {
+/* Nombres de los productos (con su margen izquierdo original) */
+#menu td:nth-child(1) {
+    text-align: left;
+    padding-left: 25px;
+    font-weight: 500;
+}
+
+/* Descripciones (alineadas de forma natural a la izquierda como las tenías al inicio) */
+#menu td:nth-child(2) {
+    text-align: left;
+}
+
+/* Precios centrados */
+#menu td:nth-child(3) {
     text-align: center;
     font-weight: bold;
     color: #A26744;
