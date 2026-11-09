@@ -1,0 +1,81 @@
+.barra-navegacion {
+  background-color: #2b1704;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+}
+
+.logo-texto {
+  color: #fdfbf7;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu-enlaces a {
+  color: #fdfbf7;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-enlaces a:hover {
+  color: #a26744;
+}
+
+.contenido-banner {
+  background-color: #fdfbf7;
+  text-align: center;
+  padding: 50px 20px 40px 20px;
+}
+
+.contenido-banner h1 {
+  color: #2b1704;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.eslogan-banner {
+  color: #5c3d2e;
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+}
+
+.contenedor-imagen-hero {
+  max-width: 650px;
+  margin: 0 auto 30px auto;
+}
+
+.imagen-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(43, 4, 0, 0.15);
+}
+
+.contenedor-cta {
+  text-align: center;
+}
+
+.boton-comenzar {
+  display: inline-block;
+  background-color: #a26744;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-comenzar:hover {
+  background-color: #7a4b2e;
+}
+
+.body {
+  margin: 0;
+}
