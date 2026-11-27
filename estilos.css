@@ -117,6 +117,63 @@ html {
    2. SOBRE NOSOTROS (Módulo 5 - Omar)
    ========================================================== */
 
+.nosotros {
+  background-color: #ffffff;
+  padding: 45px 20px;
+  max-width: 850px;
+  margin: 0 auto 30px auto;
+  border-radius: 8px;
+  border: 1px solid #e0d5c9;
+  box-shadow: 0 4px 12px rgba(43, 23, 4, 0.1);
+}
+
+.nosotros h2 {
+  text-align: center;
+  color: #2b1704;
+  font-family: Georgia, "Times New Roman", serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nosotros p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.nosotros .sellos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 25px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nosotros .sello {
+  flex: 1 1 200px;
+  background-color: #fdfbf7;
+  border: 1px solid #e0d5c9;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nosotros .boton-bebidas {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #a26744;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.nosotros .boton-bebidas:hover {
+  background-color: #7a4b2e;
+}
+
 /* ==========================================================
    3. BEBIDAS DESTACADAS (Módulo 2 - Geordany)
    ========================================================== */
