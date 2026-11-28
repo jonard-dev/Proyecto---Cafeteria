@@ -7,8 +7,17 @@
    0. GLOBAL
    Reglas que afectan a toda la página
    ========================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #f5ede3;
+  color: #2b1704;
 }
 
 html {
@@ -177,122 +186,101 @@ html {
 /* ==========================================================
    3. BEBIDAS DESTACADAS (Módulo 2 - Geordany)
    ========================================================== */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Georgia", "Times New Roman", serif;
-  background: #f5ede3;
-  color: #3b2a20;
-}
-
-#bebidas {
+.bebidas {
   max-width: 1100px;
   margin: 0 auto;
   padding: 48px 20px;
 }
 
-#bebidas h2 {
+.bebidas h2 {
   font-size: 2rem;
-  color: #4a2c1a;
+  color: #2b1704;
   text-align: center;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
 }
 
-#bebidas > p {
+.bebidas > p {
   text-align: center;
-  color: #7a5c47;
+  color: #5c3d2e;
   font-style: italic;
   margin-bottom: 36px;
 }
 
-/* Cuadrícula de bebidas */
-#bebidas ul {
+.bebidas h3 {
+  color: #2b1704;
+  font-size: 1.3rem;
+  margin: 32px 0 16px;
+}
+
+/* --- Cuadrícula de bebidas --- */
+.lista-bebidas {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
 }
 
-#bebidas li {
-  background: #fffaf3;
-  border: 1px solid #e3d2bd;
-  border-left: 5px solid #8b5a2b;
+.lista-bebidas li {
+  background-color: #fdfbf7;
+  border: 1px solid #e0d5c9;
+  border-left: 5px solid #a26744;
   border-radius: 12px;
   padding: 18px 20px;
-  box-shadow: 0 2px 8px rgba(74, 44, 26, 0.08);
-  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(43, 23, 4, 0.08);
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
     border-left-color 0.2s ease;
 }
 
-#bebidas li:hover {
+.lista-bebidas li:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(74, 44, 26, 0.18);
-  border-left-color: #c68b4e;
+  box-shadow: 0 8px 20px rgba(43, 23, 4, 0.18);
+  border-left-color: #7a4b2e;
 }
 
-.nombre {
+.lista-bebidas .nombre {
   display: block;
   font-size: 1.15rem;
-  color: #4a2c1a;
+  font-weight: bold;
+  color: #2b1704;
   margin-bottom: 6px;
 }
 
-.descripcion {
+.lista-bebidas .descripcion {
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 0.92rem;
   line-height: 1.5;
-  color: #6b5444;
+  color: #5c3d2e;
 }
 
-/* Quita el <br> extra entre nombre y descripción */
-#bebidas li br {
-  display: none;
-}
-
-/* Enlace al paso 2 */
-.enlace-menu {
+/* --- Enlace al paso 2 --- */
+.bebidas .enlace-menu {
   text-align: center;
   margin-top: 40px;
 }
 
-.enlace-menu a {
+.bebidas .enlace-menu a {
   display: inline-block;
   padding: 14px 28px;
-  background: #4a2c1a;
-  color: #fffaf3;
+  background-color: #a26744;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 999px;
+  border-radius: 25px;
   transition:
-    background 0.2s ease,
+    background-color 0.3s ease,
     transform 0.1s ease;
 }
 
-.enlace-menu a:hover {
-  background: #8b5a2b;
+.bebidas .enlace-menu a:hover {
+  background-color: #7a4b2e;
 }
 
-.enlace-menu a:active {
+.bebidas .enlace-menu a:active {
   transform: scale(0.97);
-}
-
-/* Móvil */
-@media (max-width: 600px) {
-  #bebidas h2 {
-    font-size: 1.6rem;
-  }
-
-  #bebidas ul {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ==========================================================
